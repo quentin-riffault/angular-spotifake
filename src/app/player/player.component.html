@@ -1,0 +1,24 @@
+<div class="flex flex-row justify-between">
+    <div class="flex flex-row items-center">
+        <img 
+            alt="Album currently listening to" 
+            height="128px" 
+            width="128px" 
+            src="{{playing.albumCover}}"
+            class="rounded-md mx-5"
+        />
+
+        <p class="mx-5">
+            <b>{{playing.title}}</b><br>
+            {{playing.album}}
+        </p>
+
+        <app-like-button [id]="playing.id"></app-like-button>
+    </div>
+
+    <div>play bar</div>
+
+    <div class="mx-5">volume & controls</div>
+
+</div>
+

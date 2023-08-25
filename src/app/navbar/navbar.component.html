@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let link of linklist">
+        <a href="{{link.target}}">
+            <img 
+                alt="{{link.id}} button" 
+                src="{{link.imageUrl}}" 
+                width="32px" 
+                height="32px"
+            >
+            <span>{{link.id}}</span>
+        </a>
+    </li>
+</ul>

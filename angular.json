@@ -27,10 +27,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets", 
+              {
+                "glob" : "**/*",
+                "input" : "/src/assets/heroicons",
+                "output" : "/dist/assets/heroicons/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/styles.scss"
             ],
             "scripts": []
           },
@@ -93,7 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/styles.scss"
             ],
             "scripts": []
           }
